@@ -1,0 +1,396 @@
+/* WAD Assignment 1 - external stylesheet
+   Student: Sumeet Upadhya | Enrollment: 240860116058 */
+
+/* Universal selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Element selectors */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f3556;
+  background: #ffffff;
+  line-height: 1.65;
+}
+
+a {
+  color: #0b63ce;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #084a9b;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+
+.navbar-brand {
+  color: #10294c;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+
+.navbar-brand span,
+.hero-section h1 span {
+  color: #1264d8;
+}
+
+.nav-link {
+  color: #344d70;
+  font-size: 0.93rem;
+  margin-left: 0.45rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #1264d8;
+}
+
+.hero-section {
+  background: linear-gradient(110deg, #f2f8ff 0%, #e4f1ff 100%);
+  border-bottom: 1px solid #d9e8f8;
+}
+
+.profile-photo {
+  width: 190px;
+  height: 205px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 14px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 22px rgba(31, 76, 130, 0.12);
+}
+
+.eyebrow {
+  color: #1264d8;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.hero-section h1 {
+  color: #142d50;
+  font-size: clamp(2.2rem, 4vw, 3.25rem);
+  font-weight: 750;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.hero-description {
+  color: #456386;
+  max-width: 480px;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.hero-links a {
+  background: #ffffff;
+  border: 1px solid #c9def7;
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.quote-card {
+  border-left: 3px solid #4c91e8;
+  margin: 0;
+  padding: 0.4rem 0 0.4rem 1.15rem;
+  color: #1f4f8d;
+}
+
+.quote-card p {
+  font-size: 1.03rem;
+  font-style: italic;
+  margin-bottom: 0.55rem;
+}
+
+.quote-card cite {
+  color: #47719e;
+  font-size: 0.88rem;
+  font-style: normal;
+}
+
+.section-block {
+  padding: 2.6rem 0;
+  border-bottom: 1px solid #e5edf6;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #0d55b6;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1.15rem;
+}
+
+.section-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  color: #ffffff;
+  background: #176bd1;
+  border-radius: 9px;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+}
+
+#about p {
+  color: #3b5576;
+  font-size: 0.96rem;
+}
+
+.education-table {
+  border: 1px solid #d2e3f7;
+  font-size: 0.91rem;
+  margin-bottom: 0.65rem;
+}
+
+.education-table thead th {
+  color: #164d91;
+  background: #edf5ff;
+  border-color: #d2e3f7;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.education-table td {
+  color: #365474;
+  border-color: #d2e3f7;
+}
+
+.education-table tbody tr:hover {
+  background: #f7fbff;
+}
+
+.small-note {
+  color: #71849b;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.contribution-list,
+.achievement-list {
+  padding-left: 1.35rem;
+  color: #3b5576;
+}
+
+.contribution-list li,
+.achievement-list li {
+  padding: 0.28rem 0 0.45rem 0.2rem;
+}
+
+.contribution-list li::marker {
+  color: #176bd1;
+  font-weight: 700;
+}
+
+.achievement-list li::marker {
+  color: #176bd1;
+}
+
+.gallery-card {
+  height: 100%;
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid #dce8f6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.gallery-card figcaption {
+  padding: 0.8rem 0.9rem;
+  color: #315174;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.section-intro {
+  color: #536d8d;
+  font-size: 0.93rem;
+}
+
+.contact-form {
+  max-width: 650px;
+}
+
+.form-label {
+  color: #315174;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form-control {
+  border-color: #cbdced;
+  border-radius: 6px;
+  font-size: 0.94rem;
+  padding: 0.65rem 0.8rem;
+}
+
+.form-control:focus {
+  border-color: #4e91e3;
+  box-shadow: 0 0 0 0.2rem rgba(23, 107, 209, 0.12);
+}
+
+.btn-primary {
+  background: #176bd1;
+  border-color: #176bd1;
+  border-radius: 6px;
+  padding: 0.65rem 1.2rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #1056ad;
+  border-color: #1056ad;
+}
+
+.form-feedback {
+  color: #17643b;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.student-card {
+  height: 100%;
+  padding: 1.5rem;
+  background: #f3f8ff;
+  border: 1px solid #dbe9f8;
+  border-radius: 10px;
+}
+
+.student-card h3 {
+  color: #164d91;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+}
+
+.student-card dl {
+  margin-bottom: 0;
+}
+
+.student-card dt {
+  color: #3c5878;
+  font-size: 0.82rem;
+  margin-top: 0.7rem;
+}
+
+.student-card dd {
+  color: #173c68;
+  font-size: 0.93rem;
+  overflow-wrap: anywhere;
+  margin-bottom: 0.3rem;
+}
+
+.site-footer {
+  color: #ffffff;
+  background: #1764bd;
+  padding: 1.2rem 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 1rem;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.82rem;
+}
+
+.footer-content a {
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+/* ID selector example */
+#contact {
+  scroll-margin-top: 80px;
+}
+
+/* Responsive layout */
+@media (max-width: 767.98px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 155px;
+    height: 165px;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+
+  .quote-card {
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .section-block {
+    padding: 2rem 0;
+  }
+
+  .gallery-card img {
+    height: 230px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
